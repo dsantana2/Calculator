@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.darrensantana.dbinsert.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Account"
+                android:id="@+id/txtAccount"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnLogout"
+                android:text="logout"
+                android:layout_weight="3"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/horizontalProgressBar"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/custom_progress"
+            android:background="#000"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragLayout"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="insert"
+                android:id="@+id/btnInsertView"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="db display"
+                android:id="@+id/btnDbDisplay"
+                android:layout_weight="1"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
